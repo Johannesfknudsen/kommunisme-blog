@@ -68,9 +68,7 @@ a {
 
 /* Add styles to the form container */
 
-.container {
-
-}
+.container {}
 
 .logon-group {
   position: absolute;
@@ -121,6 +119,7 @@ hr {
 .loginbtn:hover {
   opacity: 1;
 }
+
 
 /* Set a style for the submit/register button */
 .registerbtn {
