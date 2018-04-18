@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>KOMMUNISME BLOGGEN</title>
 
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Nyt Indlæg</h1>
-    <div class="submit-form">
-      <form>
-        <fieldset class="form-group">
-          <label for="InputForename">Fornavn</label>
-          <input type="name" class="form-control" id="InputForename" placeholder="Dit fornavn">
-        </fieldset>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>KOMMUNISME BLOGGEN</title>
+
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1>Nyt Indlæg</h1>
+  <div class="submit-form">
+    <form>
+      <fieldset class="form-group">
+        <label for="InputForename">Fornavn</label>
+        <input type="name" class="form-control" id="InputForename" placeholder="Dit fornavn">
+      </fieldset>
       <form>
         <fieldset class="form-group">
           <label for="InputSurname">Efternavn</label>
-            <input type="name" class="form-control" id="InputSurname" placeholder="Dit efternavn">
-          </fieldset>
+          <input type="name" class="form-control" id="InputSurname" placeholder="Dit efternavn">
+        </fieldset>
         <fieldset class="form-group">
           <label for="InputEmail">Email addresse</label>
           <input type="email" class="form-control" id="InputEmail" placeholder="Skriv email">
@@ -34,47 +36,45 @@
             <option>Kunst</option>
             <option>Events</option>
             <option>Konspirationsteorier</option>
-            <option></option>
+            <option>Andet</option>
           </select>
         </fieldset>
         <fieldset class="form-group">
-          <label for="exampleTextarea">Example textarea</label>
-          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          <label for="Textarea">Dit Indlæg</label>
+          <textarea class="form-control" id="Textarea" rows="3"></textarea>
         </fieldset>
         <fieldset class="form-group">
-          <label for="exampleInputFile">File input</label>
-          <input type="file" class="form-control-file" id="exampleInputFile">
-          <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+          <label for="InputFile">Billede</label>
+          <input type="file" class="form-control-file" id="InputFile">
+          <small class="text-muted">Hvis du vil have et billede på dit indsalg så upload det her.</small>
         </fieldset>
         <div class="radio">
           <label>
             <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            Option one is this and that&mdash;be sure to include why it's great
+            SFW
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            Option two can be something else and selecting it will deselect option one
-          </label>
-        </div>
-        <div class="radio disabled">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-            Option three is disabled
+            NSFW
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox"> Check me out
+            <input type="checkbox"> Acceptere du <a href="https://soundcloud.com/user-688373407/nina-dak">vilkår og betingelser</a>
           </label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-    </div>
+    </form>
+    <audio autoplay loop>
+      <source src="" type="audio/mpeg">
+    </audio>
+  </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
 </html>
