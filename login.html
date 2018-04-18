@@ -12,9 +12,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="typeWriter();">
   <div class="bg-img">
     <h1>Login</h1>
+    <div class="JoinUs">
+      <p id="demo"></p>
+      <script>
+        var it = 0;
+        var txt = 'Kom join det kommunistiske kammeratskab!';
+        var speed = 100;
+
+        function typeWriter() {
+          if (it < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(it);
+            it++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        window.onload = typeWriter();
+      </script>
+    </div>
     <div class="logon-group">
       <div id="Login" class="tabcontent">
         <form action="/action_page.php">
@@ -33,7 +50,7 @@
       </div>
       <div id="SignUp" class="tabcontent">
         <h3>Sign up</h3>
-        <p>Paris is the capital of France.</p>
+        <p></p>
       </div>
 
       <button class="tablink" onclick="openLogon('Login', this, 'green')" id="defaultOpen">Login</button>
