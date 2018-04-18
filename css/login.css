@@ -2,6 +2,14 @@ body, html {
   height: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: dodgerblue;
+}
+
 .logon-group {
   margin: auto;
 }
@@ -15,7 +23,7 @@ body, html {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 1vh 1em;
   font-size: 17px;
   width: 50%;
   align-content: center;
@@ -33,7 +41,7 @@ body, html {
 .tabcontent {
   color: black;
   display: none;
-  padding: 1% 0.5% 10% 0.5%;
+  padding: 1% 0.5% 1% 0.5%;
   /* top right bottom left */
 }
 
@@ -44,9 +52,7 @@ body, html {
 #Login {background-color:green;}
 */
 
-* {
-  box-sizing: border-box;
-}
+
 
 .bg-img {
   /* The image used */
@@ -69,22 +75,23 @@ body, html {
 .logon-group {
   position: absolute;
   right: 0;
-  top: 25%;
-  margin: 20px;
-  padding: 16px;
+  top: 20%;
+  margin: 0.5rem;
+  padding: 3vh;
   background-color: white;
   border-radius: 0.25rem;
-  width: 25%;
+  width: auto;
 }
 
 /* Full-width input fields */
 
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 2vh;
+  margin: 0.25em 0 0.5em 0;
   border: none;
   background: #f1f1f1;
+  display: inline-block;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -92,30 +99,49 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 0.1em;
+}
+
 /* Set a style for the submit button */
 
-.btn {
+.loginbtn {
   background-color: #4CAF50;
   color: white;
-  padding: 16px 20px;
+  padding: 1em 1.25em;
+  margin: 0.5em 0;
   border: none;
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
 }
 
-.btn:hover {
+.loginbtn:hover {
   opacity: 1;
 }
 
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1.5vh 1.25em;
+  margin: 0.25em 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity:1;
+}
 
 .JoinUs {
-  position: absolute;
   left: 0;
   top: 20%;
-  margin: 20px;
-  padding: 16px;
   color: white;
   width: 40%;
-  font-size: 750%;
+  max-height: 75%;
+  font-size: 6vw;
 }

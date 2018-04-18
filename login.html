@@ -45,13 +45,31 @@
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="loginbtn">Login</button>
           </div>
         </form>
       </div>
       <div id="SignUp" class="tabcontent">
-        <h3>Sign up</h3>
-        <p></p>
+        <form action="action_page.php">
+          <div class="container">
+            <h2>Sign up</h2>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <hr>
+
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <button type="submit" class="registerbtn">Register</button>
+          </div>
+        </form>
       </div>
 
       <button class="tablink" onclick="openLogon('Login', this, 'green')" id="defaultOpen">Login</button>
