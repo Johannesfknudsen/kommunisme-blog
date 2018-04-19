@@ -22,7 +22,7 @@ a {
   float: left;
   border: none;
   outline: none;
-  cursor: pointer;
+  cursor: auto;
   padding: 1vh 1em;
   font-size: 17px;
   width: 50%;
@@ -78,7 +78,7 @@ a {
   padding: 3vh;
   background-color: white;
   border-radius: 0.25rem;
-  width: auto;
+  width: 26%;
 }
 
 /* Full-width input fields */
