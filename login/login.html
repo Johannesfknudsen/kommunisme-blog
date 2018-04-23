@@ -16,7 +16,7 @@
   <div class="bg-img">
     <h1>Login</h1>
     <div class="JoinUs">
-      <strong id="demo"></strong>
+      <strong id="welcome"></strong>
       <script>
         var it = 0;
         var txt = 'Kom join det kommunistiske kammeratskab!';
@@ -24,7 +24,7 @@
 
         function typeWriter() {
           if (it < txt.length) {
-            document.getElementById("demo").innerHTML += txt.charAt(it);
+            document.getElementById("welcome").innerHTML += txt.charAt(it);
             it++;
             setTimeout(typeWriter, speed);
           }
@@ -49,7 +49,7 @@
         </form>
       </div>
       <div id="SignUp" class="tabcontent">
-        <form action="action_page.php">
+        <form action="action_login.php" method="POST">
           <div class="container">
             <h2>Sign up</h2>
             <p>Please fill in this form to create an account.</p>
