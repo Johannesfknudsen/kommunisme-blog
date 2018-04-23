@@ -3,7 +3,7 @@
   $psd = $_POST["psw"];
 
 
-  echo "";
+  echo $email. " ".$efternavn;
 
 
  ?>
