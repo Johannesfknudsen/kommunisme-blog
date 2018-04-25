@@ -1,9 +1,8 @@
 <?php
+  require '../php/insert.php';
   $email = $_POST["email"];
-  $psd = $_POST["psw"];
-
+  $psw = $_POST["psw"];
 
   echo $email. " ".$psw;
 
-
- ?>
+?>
