@@ -19,7 +19,7 @@
 
         //Inserts lines into table
     $sql = "INSERT INTO cst_blog (forfatter, keywords, overskrift, indlæg)
-    VALUES ('$forfatter', '$keywords', '$overskrift', '$indlæg')";
+   VALUES ('$forfatter', '$keywords', '$overskrift', '$indlæg')";
 
         if (mysqli_query($conn, $sql)) {
         echo "Du har logget ind på bloggen.\n";

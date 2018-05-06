@@ -14,55 +14,53 @@
 <body>
   <h1>Nyt Indlæg</h1>
   <div class="submit-form">
-    <form>
+    <form action="./action_submit.php" method="POST" enctype="multipart/form-data">
       <fieldset class="form-group">
         <label for="InputForename">Fornavn</label>
         <input type="text" class="form-control" id="InputForename" placeholder="Dit fornavn">
       </fieldset>
-      <form>
-        <fieldset class="form-group">
-          <label for="InputSurname">Efternavn</label>
-          <input type="text" class="form-control" id="InputSurname" placeholder="Dit efternavn">
-        </fieldset>
-        <fieldset class="form-group">
-          <label for="InputEmail">Email addresse</label>
-          <input type="email" class="form-control" id="InputEmail" placeholder="Skriv email">
-          <small class="text-muted">Vi vil aldrig dele din email med nogle andre.</small>
-        </fieldset>
-        <fieldset class="form-group">
-          <label for="Select">Kategori</label>
-          <select class="form-control" id="Select">
+      <fieldset class="form-group">
+        <label for="InputSurname">Efternavn</label>
+        <input type="text" class="form-control" id="InputSurname" placeholder="Dit efternavn">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="InputEmail">Email addresse</label>
+        <input type="email" class="form-control" id="InputEmail" placeholder="Skriv email">
+        <small class="text-muted">Vi vil aldrig dele din email med nogle andre.</small>
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="Select">Kategori</label>
+        <select class="form-control" id="Select">
             <option>Politik</option>
             <option>Kunst</option>
             <option>Events</option>
             <option>Konspirationsteorier</option>
             <option>Andet</option>
           </select>
-        </fieldset>
-        <fieldset class="form-group">
-          <label for="Textarea">Dit Indlæg</label>
-          <textarea class="form-control" id="Textarea" rows="3"></textarea>
-        </fieldset>
-        <fieldset class="form-group">
-          <label for="InputFile">Billede</label>
-          <input type="file" class="form-control-file" id="InputFile">
-          <small class="text-muted">Hvis du vil have et billede på dit indsalg så upload det her.</small>
-        </fieldset>
-        <div class="checkbox">
-          <label>
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="Textarea">Dit Indlæg</label>
+        <textarea class="form-control" id="Textarea" rows="3"></textarea>
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="InputFile">Billede</label>
+        <input type="file" class="form-control-file" name="fileToUpload" id="InputFile">
+        <small class="text-muted">Hvis du vil have et billede på dit indsalg så upload det her.</small>
+      </fieldset>
+      <div class="checkbox">
+        <label>
             <input type="checkbox"> NSFW
           </label>
-        </div>
-        <div class="checkbox">
-          <label>
+      </div>
+      <div class="checkbox">
+        <label>
             <input type="checkbox"> Acceptere du <a href="https://soundcloud.com/user-688373407/nina-dak" target="_blank">vilkår og betingelser</a>
           </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <br>
-        </div>
-      </form>
-    </form>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <br>
+  </div>
+  </form>
   </div>
 
 
