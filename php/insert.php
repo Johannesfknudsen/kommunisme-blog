@@ -5,7 +5,7 @@
         //initialize variables
     $user = $_POST["user"];
     $psw =$_POST["psw"];
-    $psw =$_POST["overskrift"];
+    $heading =$_POST["overskrift"];
     $indlæg =$_POST["indlæg"];
 
 
