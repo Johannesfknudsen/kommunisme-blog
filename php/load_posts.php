@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
 <?php
 require 'connect.php';
 
@@ -18,5 +15,3 @@ if ($result->num_rows > 0) {
 //Close connection to DB
 mysqli_close($conn);
 ?>
-</body>
-</html>
