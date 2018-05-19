@@ -1,3 +1,4 @@
+// Buttons
 function openLogon(account, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;

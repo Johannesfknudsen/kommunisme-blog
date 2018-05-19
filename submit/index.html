@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>KOMMUNISME BLOGGEN</title>
+
+  <link type="text/css" rel="stylesheet" href="../css/submit.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1>Nyt Indlæg</h1>
+  <div class="submit-form">
+    <form action="./action_submit.php" method="POST" enctype="multipart/form-data">
+      <fieldset class="form-group">
+        <label for="InputName">Navn</label>
+        <input type="text" class="form-control" name="InputName" placeholder="Dit fornavn">
+      </fieldset>
+      <!-- <fieldset class="form-group">
+        <label for="InputSurname">Efternavn</label>
+        <input type="text" class="form-control" id="InputSurname" placeholder="Dit efternavn">
+      </fieldset> -->
+      <fieldset class="form-group">
+        <label for="InputEmail">Email addresse</label>
+        <input type="email" class="form-control" name="InputEmail" placeholder="Skriv email">
+        <small class="text-muted">Vi vil aldrig dele din email med nogle andre.</small>
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="Select">Kategori</label>
+        <select class="form-control" name="SelectCategory">
+            <option>Politik</option>
+            <option>Kunst</option>
+            <option>Events</option>
+            <option>Konspirationsteorier</option>
+            <option>Andet</option>
+          </select>
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="InputHeading">Overskrift</label>
+        <input type="text" class="form-control" name="InputHeading" placeholder="Titlen på dit indlæg">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="Textarea">Dit Indlæg</label>
+        <textarea class="form-control" name="Textarea" rows="3"></textarea>
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="InputFile">Billede</label>
+        <input type="file" class="form-control-file" name="fileToUpload" id="InputFile">
+        <small class="text-muted">Hvis du vil have et billede på dit indsalg så upload det her.</small>
+      </fieldset>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="SelectNSFW"> NSFW
+          </label>
+      </div>
+      <div class="checkbox">
+        <label>
+            <input type="checkbox" name="SelectAgree"> Acceptere du <a href="https://soundcloud.com/user-688373407/nina-dak" target="_blank">vilkår og betingelser</a>
+          </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <br>
+  </div>
+  </form>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
+
+</html>
