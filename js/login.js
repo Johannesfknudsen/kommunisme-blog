@@ -21,22 +21,3 @@ function openLogon(account, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-
-
-
-// Welcoming text
-
-var it = 0;
-var txt = 'Lorem ipsum dummy text blabla.';
-var speed = 50;
-
-
-
-// function typeWriter() {
-window.onload = function() {
-  if (it < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(it);
-    it++;
-    setTimeout(speed);
-  }
-};
