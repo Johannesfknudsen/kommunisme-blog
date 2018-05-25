@@ -15,7 +15,7 @@
 
 
         if (mysqli_query($conn, $sql)) {
-        echo "Hej <?php echo $author; ?>, du har indsendt et indlæg til bloggen under emailadressen <?php echo $email; ?>.\n Overskriften er <?php echo $heading; ?> Kategorien er <?php echo $category; ?> Og indholdet er <?php echo $content; ?>";
+        echo "Hej "<?php echo $author; ?>", du har indsendt et indlæg til bloggen under emailadressen " <?php echo $email; ?>".\n Overskriften er " <?php echo $heading; ?> "Kategorien er " <?php echo $category; ?> "Og indholdet er " <?php echo $content; ?>;
         }
         else{
                 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
