@@ -11,7 +11,7 @@
 
         //Inserts lines into table
     $sql = "INSERT INTO jemm_post (author, email, category, heading, content, NSFW, imgid)
-    VALUES ('$author', '$email', '$category', '$heading', '$content', '$NSFW', '$target_file')";
+    VALUES ('$author', '$email', '$category', '$heading', '$content', '$NSFW', '$imgid')";
 
 
         if (mysqli_query($conn, $sql)) {

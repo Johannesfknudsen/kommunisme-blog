@@ -69,9 +69,7 @@
       <p>
         <?php echo $imgid?>
       </p>
-      <img src="uploads/img/<?php echo $imgid; ?>" height="250" width="250" />
-
-      <img src="uploads/img/<?php echo $imgid; ?>" height="250" width="250" alt="Indlægets billede.">
+      <img src="./uploads/img/<?php echo $imgid; ?>" height="250" width="250" alt="Indlægets billede.">
       <br>
       <hr>
       <?php
